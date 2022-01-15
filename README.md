@@ -7,17 +7,18 @@ Steve is a recent finance graduate who is helping his parents, who are also his 
 Steve wants to look into "DQ"s returns over 2 previous years, as well as those of several other green energy companies that are traded, to help diversify his parents' investments. This was done by writing a VBA script that compiles each company's total daily volume as well as calculates the percent of return for each year.  
 
 ## Results
-An analysis of all stocks in the years 2017 and 2018 showed that overall, all but 2 stocks (TERP and RUN) had a significantly higher percentage of return in 2017, when compared to 2018's values.  While all but one stock (TERP) had positive returns in 2017, only 2 (ENPH and RUN) had positive returns in 2018.  
+An analysis of all stocks in the years 2017 and 2018 showed that overall, all but 2 stocks (TERP and RUN) had a significantly higher percentage of return in 2017, when compared to 2018's values.  While all but one stock (TERP) had positive returns in 2017, only 2 (ENPH and RUN) had positive returns in 2018.  ![2017 Green Stocks Performance](https://github.com/MischievousBadger/stock-analysis/blob/f99debb7be0f8effd18ce61b290ac355b4e45114/Resources/stocks_performance_2017.PNG)  ![2018 Green Stocks Performance](https://github.com/MischievousBadger/stock-analysis/blob/f99debb7be0f8effd18ce61b290ac355b4e45114/Resources/stocks_performance_2018.PNG) Steve's parents' stock, "DQ", while having an increase in total daily volume of 72,077,700 between 2017 and 2018, had a difference of -262% between the return values in 2017 and 2018.  This would be a significant argument to bolster Steve's desire to diversify his parent's investments.  
 
-![2017 Green Stocks Performance](https://github.com/MischievousBadger/stock-analysis/blob/f99debb7be0f8effd18ce61b290ac355b4e45114/Resources/stocks_performance_2017.PNG)  ![2018 Green Stocks Performance](https://github.com/MischievousBadger/stock-analysis/blob/f99debb7be0f8effd18ce61b290ac355b4e45114/Resources/stocks_performance_2018.PNG) 
+The original code to analyze all stocks was refactored for efficiency, using arrays for ticker volumes, starting prices and ending prices in the refactored code versus coding these as variables in the original. 
+![variables_vs_arrays](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/variables_vs_arrays.PNG)
 
-Steve's parents' stock, "DQ", while having an increase in total daily volume of 72,077,700 between 2017 and 2018, had a difference of -262% between the return values in 2017 and 2018.  This would be a significant argument to bolster Steve's desire to diversify his parent's investments.  
+A ticker index was also added to the refactored code.  
+![volume_increase_ticker](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/volume_increase_ticker.PNG)
 
-The original code to analyze all stocks was refactored for efficiency, using arrays for ticker volumes, starting prices and ending prices in the refactored code versus coding these as variables in the original. A ticker index was also added to the refactored code.  This resulted in an increase in execution time for the refactored code over the original. 
+Finally, a separate loop was created to go through the arrays to output ticker, total daily volume and return, as compared to the original output being part of the nested loops. 
+![data_output_ticker](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/data_output_ticker.PNG)
 
-![2017 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/0dc35950e61e7ca518c2b24427b3d45a9e4e89ed/Resources/original_script_2017.PNG) ![2017 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/0dc35950e61e7ca518c2b24427b3d45a9e4e89ed/Resources/VBA_Challenge_2017.PNG) 
-![2018 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/0dc35950e61e7ca518c2b24427b3d45a9e4e89ed/Resources/original_script_2018.PNG) ![2018 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/0dc35950e61e7ca518c2b24427b3d45a9e4e89ed/Resources/VBA_Challenge_2018.PNG)
-
+These changes resulted in an increase in execution time for the refactored code over the original. ![2017 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/original_script_2017.PNG) ![2017 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/VBA_Challenge_2017.PNG) ![2018 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/original_script_2018.PNG) ![2018 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/VBA_Challenge_2018.PNG)
 
 ## Summary
 ### Advantages/Disadvantages of Refactoring Code
