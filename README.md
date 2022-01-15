@@ -21,13 +21,15 @@ A ticker index was also added to the refactored code.
 Finally, a separate loop was created to go through the arrays to output ticker, total daily volume and return, as compared to the original output being part of the nested loops. 
 ![data_output_ticker](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/data_output_ticker.PNG)
 
-These changes resulted in an increase in execution time for the refactored code over the original. The refactored code (right image) ran approximately 0.11 seconds faster than the original code (left image) for year 2017.
+These changes resulted in an increase in execution time for the refactored code over the original. The refactored code ran approximately 0.11 seconds faster than the original code for year 2017.
 
-![2017 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/original_script_2017.PNG) ![2017 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/VBA_Challenge_2017.PNG) 
+![2017 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/3a7bfefe46311693053ca32edfd5d974e095aa9c/Resources/original_script_2017.PNG) 
+![2017 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/3a7bfefe46311693053ca32edfd5d974e095aa9c/Resources/VBA_Challenge_2017.PNG) 
 
-For year 2018, the refactored code (right image) also ran approximately 0.11 seconds faster than the original code (left image).
+For year 2018, the refactored code also ran approximately 0.11 seconds faster than the original code.
 
-![2018 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/original_script_2018.PNG) ![2018 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/22d2c7ade4fd87ce27819b8a0838b6626bf73015/Resources/VBA_Challenge_2018.PNG)
+![2018 Original Code](https://github.com/MischievousBadger/stock-analysis/blob/main/Resources/original_script_2018.PNG) 
+![2018 Refactored Code](https://github.com/MischievousBadger/stock-analysis/blob/3a7bfefe46311693053ca32edfd5d974e095aa9c/Resources/VBA_Challenge_2018.PNG)
 
 ## Summary
 ### Advantages/Disadvantages of Refactoring Code
