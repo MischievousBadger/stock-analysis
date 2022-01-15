@@ -15,7 +15,7 @@ Steve's parents' stock, "DQ", while having an increase in total daily volume of 
 The original code to analyze all stocks was refactored for efficiency, using arrays for ticker volumes, starting prices and ending prices in the refactored code versus coding these as individual variables in the original. A ticker index was also added to the refactored code.
 ![arrays_tickerIndex](https://github.com/MischievousBadger/stock-analysis/blob/f06b3911a5fb09fc3f75a561138eb562a71d4bb6/Resources/arrays_tickerIndex.PNG)
 
-To replace the nested for loops to loop through the tickers, and then through the rows in the data to find total daily volume, starting prices and ending prices, one for loop was created to simplify this process,   
+To replace the nested for loops to loop through the tickers, and then through the rows in the data to find total daily volume, starting prices and ending prices, one for loop was created to simplify this process.  A for loop to initialize ticker volumes was created, and then another for loop was created to loop and find values utilizing the tickerIndex variable.     
 ![data_output_ticker](https://github.com/MischievousBadger/stock-analysis/blob/6be4b39c9b77dff1e1a24f3fdfd5e8c8a15bf123/Resources/refactored_code_loop.PNG)
 
 These changes resulted in an increase in execution time for the refactored code over the original. The refactored code ran approximately 0.69 seconds faster than the original code for year 2017.
